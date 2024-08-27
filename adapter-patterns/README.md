@@ -22,15 +22,15 @@ classDiagram
     }
 
     class VerifyMe {
-        +verify_drivers_license(id: str) : bool
-        +verify_nin(id: str) : bool
-        +verify_bvn(id: str) : bool
+        +check_drivers_license(id: str) : bool
+        +check_nin(id: str) : bool
+        +check_bvn(id: str) : bool
     }
 
     class Prembly {
-        +verify_drivers_license(id: str) : bool
-        +verify_nin(id: str) : bool
-        +verify_bvn(id: str) : bool
+        +validate_drivers_license(id: str) : bool
+        +validate_nin(id: str) : bool
+        +validate_bvn(id: str) : bool
     }
 
     class QoreIDAdapter {
