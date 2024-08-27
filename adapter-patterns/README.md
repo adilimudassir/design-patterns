@@ -2,7 +2,7 @@
 classDiagram
     direction TD
 
-    class IdentityVerifier {
+    class IdentityProvider {
         +verify_drivers_license(id: str) : bool
         +verify_nin(id: str) : bool
         +verify_bvn(id: str) : bool
@@ -51,7 +51,7 @@ classDiagram
         +verify_bvn(id: str) : bool
     }
 
-    IdentityVerifier --> ProviderAdapter
+    IdentityProvider --> ProviderAdapter
     ProviderAdapter <|-- QoreIDAdapter
     ProviderAdapter <|-- VerifyMeAdapter
     ProviderAdapter <|-- PremblyAdapter
