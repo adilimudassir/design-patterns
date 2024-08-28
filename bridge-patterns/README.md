@@ -52,7 +52,7 @@ classDiagram
 
     class PhysicalDeliveryProvider {
         <<interface>>
-        +deliver_goods()
+        +arrange_delivery()
     }
 
     class LogisticsService {
